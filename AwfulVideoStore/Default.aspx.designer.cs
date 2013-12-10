@@ -49,6 +49,15 @@ namespace AwfulVideoStore {
         protected global::System.Web.UI.WebControls.Button excelBtn;
         
         /// <summary>
+        /// excelExpPopular control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button excelExpPopular;
+        
+        /// <summary>
         /// list control.
         /// </summary>
         /// <remarks>

@@ -4,35 +4,42 @@
     <Name>Звездные Войны. Эпизод 7</Name>
     <Price>1.99$</Price>
     <Rating>16</Rating>
+    <Code>0</Code>
   </Film>
   <Film>
     <Name>Белоснежка и 7 гномов</Name>
     <Price>10.99$</Price>
     <Rating>18</Rating>
+    <Code>1</Code>
   </Film>
   <Film>
     <Name>Просто Мария</Name>
     <Price>0.99$</Price>
     <Rating>18</Rating>
+    <Code>2</Code>
   </Film>
   <Film>
     <Name>Дикий ангел</Name>
     <Price>1.99$</Price>
     <Rating>18</Rating>
+    <Code>0</Code>
   </Film>
   <Film>
     <Name>Бравый капитан уходит в море</Name>
     <Price>15.99$</Price>
     <Rating>4</Rating>
+    <Code>1</Code>
   </Film>
   <Film>
     <Name>Хрустальный дворец. Избранное.</Name>
     <Price>1.99$</Price>
     <Rating>11</Rating>
+    <Code>2</Code>
   </Film>
   <Film>
     <Name>Филипп Киркоров. Лучшее</Name>
     <Price>1.99$</Price>
     <Rating>45</Rating>
+    <Code>1</Code>
   </Film>
 </Films>

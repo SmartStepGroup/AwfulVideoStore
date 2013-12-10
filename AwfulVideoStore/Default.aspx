@@ -13,12 +13,13 @@
                 <p runat="server" id="msg"></p>
                 
                 <asp:Button runat="server" ID="excelBtn" OnClick="excelBtnClck" Text="Export To Excel" />
+                <asp:Button runat="server" ID="excelExpPopular" OnClick="excelPopularBtnClck" Text="Export To Excel Popular Movies" />
 
                 <asp:ListView runat="server" ID="list">
                     <LayoutTemplate>  
                         <table id="Table1" runat="server">  
                             <tr id="Tr1" runat="server">  
-                                <td id="Td1" runat="server" style="font-size: 30px; color: gray">Name</td>  
+                                <td id="Td1" runat="server" style="font-size: 30px; color: gray">Title</td>  
                                 <td id="Td2" runat="server" style="font-size: 30px; color: gray">Price</td>  
                                 <td id="Td3" runat="server" style="font-size: 30px; color: gray">Rating</td>  
                             </tr>  
@@ -32,7 +33,7 @@
                                 <asp:Label   
                                     ID="Label1"  
                                     runat="server"  
-                                    Text='<%# Eval("Name") %>' /> 
+                                    Text='<%# Eval("Title") %>' /> 
                             </td>
                             <td><asp:Label   
                                     ID="Label2"  

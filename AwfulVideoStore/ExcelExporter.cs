@@ -9,7 +9,7 @@ using OfficeOpenXml.Style;
 
 namespace AwfulVideoStore {
     public static class ExcelExporter {
-        public static ExcelPackage Export(List<Film> films) {
+        public static ExcelPackage Export(List<Movie> films) {
             var pck = new ExcelPackage();
             var ws = pck.Workbook.Worksheets.Add("Films");
 

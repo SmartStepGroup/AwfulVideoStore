@@ -13,7 +13,7 @@ namespace AwfulVideoStore {
                 MovieCodeName = "New Release";
             else if (movieCd == MovieCodes.REGULAR)
                 MovieCodeName = "Regular";
-            else throw new ArgumentException("Unknown movie code");
+            else MovieCodeName = null;
         }
 
         public string Title { get; set; }

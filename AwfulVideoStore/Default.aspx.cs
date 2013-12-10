@@ -36,6 +36,9 @@ namespace AwfulVideoStore {
                 }
             }
             else if (Session["LoggedUser"] == "user") {
+                excelBtn.Visible = false;
+                excelExpPopular.Visible = false;
+                sellLnk.Visible = false;
                 var doc = LoadXml(fileName);
                 foreach (XmlNode node in doc.DocumentElement.ChildNodes) {
                     if (int.Parse(node.ChildNodes[2].InnerText) > 14) continue;

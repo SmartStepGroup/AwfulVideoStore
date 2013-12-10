@@ -4,3 +4,5 @@ C:\projects\trainings\AwfulVideoStore\AwfulVideoStore\obj\Debug\AwfulVideoStore.
 C:\projects\trainings\AwfulVideoStore\AwfulVideoStore\obj\Debug\AwfulVideoStore.pdb
 C:\projects\trainings\AwfulVideoStore\AwfulVideoStore\obj\Debug\AwfulVideoStore.csprojResolveAssemblyReference.cache
 C:\projects\trainings\AwfulVideoStore\AwfulVideoStore\bin\App_Data\Database.xml
+C:\projects\trainings\AwfulVideoStore\AwfulVideoStore\bin\EPPlus.dll
+C:\projects\trainings\AwfulVideoStore\AwfulVideoStore\bin\EPPlus.xml

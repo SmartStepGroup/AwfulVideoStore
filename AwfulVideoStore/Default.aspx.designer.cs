@@ -22,13 +22,13 @@ namespace AwfulVideoStore {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// lgnLink control.
+        /// lgnLnk control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor lgnLink;
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor lgnLnk;
         
         /// <summary>
         /// msg control.
@@ -38,6 +38,15 @@ namespace AwfulVideoStore {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl msg;
+        
+        /// <summary>
+        /// excelBtn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button excelBtn;
         
         /// <summary>
         /// list control.

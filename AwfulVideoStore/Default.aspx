@@ -9,9 +9,11 @@
     <body>
         <form id="form1" runat="server">
             <div style="font-size: 50px" >
-                <a href="Login.aspx" id="lgnLink" runat="server">Log In</a>
+                <a href="Login.aspx" id="lgnLnk" runat="server">Log In</a>
                 <p runat="server" id="msg"></p>
-        
+                
+                <asp:Button runat="server" ID="excelBtn" OnClick="excelBtnClck" Text="Export To Excel" />
+
                 <asp:ListView runat="server" ID="list">
                     <LayoutTemplate>  
                         <table id="Table1" runat="server">  

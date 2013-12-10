@@ -1,12 +1,19 @@
-﻿namespace AwfulVideoStore {
+﻿#region Usings
+
+using System;
+
+#endregion
+
+namespace AwfulVideoStore {
     public class Movie {
         public Movie(int movieCd) {
             if (movieCd == MovieCodes.CHILDRENS)
                 MovieCodeName = "Children";
-            if (movieCd == MovieCodes.NEW_RELEASE)
+            else if (movieCd == MovieCodes.NEW_RELEASE)
                 MovieCodeName = "New Release";
-            if (movieCd == MovieCodes.REGULAR)
+            else if (movieCd == MovieCodes.REGULAR)
                 MovieCodeName = "Regular";
+            else throw new ArgumentException("Unknown movie code");
         }
 
         public string Title { get; set; }

@@ -1,0 +1,6 @@
+C:\projects\trainings\AwfulVideoStore\AwfulVideoStore\bin\AwfulVideoStore.dll
+C:\projects\trainings\AwfulVideoStore\AwfulVideoStore\bin\AwfulVideoStore.pdb
+C:\projects\trainings\AwfulVideoStore\AwfulVideoStore\obj\Debug\AwfulVideoStore.dll
+C:\projects\trainings\AwfulVideoStore\AwfulVideoStore\obj\Debug\AwfulVideoStore.pdb
+C:\projects\trainings\AwfulVideoStore\AwfulVideoStore\obj\Debug\AwfulVideoStore.csprojResolveAssemblyReference.cache
+C:\projects\trainings\AwfulVideoStore\AwfulVideoStore\bin\App_Data\Database.xml

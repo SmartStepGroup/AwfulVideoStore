@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="AwfulVideoStore.Default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SellingReport.aspx.cs" Inherits="AwfulVideoStore.SellingReport" %>
 
 <!DOCTYPE html>
 
@@ -8,17 +8,11 @@
     </head>
     <body>
         <form id="form1" runat="server">
-            <div style="font-size: 50px" >
-                <a href="Login.aspx" id="lgnLnk" runat="server">Log In</a>
-                <a href="SellingReport.aspx" id="sellLnk" runat="server">Selling Report</a>
-                <p runat="server" id="msg"></p>
-                
-                <asp:Button runat="server" ID="excelBtn" OnClick="excelBtnClck" Text="Export To Excel" />
-                <asp:Button runat="server" ID="excelExpPopular" OnClick="excelPopularBtnClck" Text="Export To Excel Popular Movies" />
-
+            <div style="font-size: 50px">
+                <div><p>Рекомендация: лучше всех продается </p><asp:Label runat="server" ID="bestSellLbl" /></div>
                 <asp:ListView runat="server" ID="list">
                     <LayoutTemplate>  
-                        <table id="Table1" runat="server">  
+                        <table id="Table1" runat="server" style="font-size: 30px">  
                             <tr id="Tr1" runat="server">  
                                 <td id="Td1" runat="server" style="font-size: 30px; color: gray">Title</td>  
                                 <td id="Td2" runat="server" style="font-size: 30px; color: gray">Price</td>  

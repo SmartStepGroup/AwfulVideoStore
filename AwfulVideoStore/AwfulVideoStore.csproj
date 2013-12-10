@@ -65,6 +65,7 @@
     </Content>
     <Content Include="Default.aspx" />
     <Content Include="Login.aspx" />
+    <Content Include="SellingReport.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -86,6 +87,14 @@
     <Compile Include="Movie.cs" />
     <Compile Include="MovieCodes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SellingReport.aspx.cs">
+      <DependentUpon>SellingReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SellingReport.aspx.designer.cs">
+      <DependentUpon>SellingReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SellingReportServce.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

@@ -13,7 +13,7 @@ namespace AwfulVideoStore {
     public partial class Default : Page {
         protected void Page_Load(object sender, EventArgs e) {
             var fileName = string.Format(@"{0}\{1}", Path.GetFullPath(Server.MapPath("~/App_Data")), "Database.xml");
-            var films = new List<Movie>();
+            var movies = new List<Movie>();
 
             if (Session["LoggedUser"] != null) {
                 lgnLnk.Visible = false;
@@ -22,12 +22,13 @@ namespace AwfulVideoStore {
                 list.Visible = true;
                 excelBtn.Visible = true;
                 excelExpPopular.Visible = true;
+                sellLnk.Visible = true;
             }
 
             if (Session["LoggedUser"] == "admin") {
                 var doc = LoadXml(fileName);
                 foreach (XmlNode node in doc.DocumentElement.ChildNodes) {
-                    films.Add(new Movie(int.Parse(node.ChildNodes[3].InnerText)) {
+                    movies.Add(new Movie(int.Parse(node.ChildNodes[3].InnerText)) {
                         Title = node.ChildNodes[0].InnerText,
                         Price = node.ChildNodes[1].InnerText,
                         Rating = int.Parse(node.ChildNodes[2].InnerText)
@@ -39,7 +40,7 @@ namespace AwfulVideoStore {
                 foreach (XmlNode node in doc.DocumentElement.ChildNodes) {
                     if (int.Parse(node.ChildNodes[2].InnerText) > 14) continue;
 
-                    films.Add(new Movie(int.Parse(node.ChildNodes[3].InnerText)) {
+                    movies.Add(new Movie(int.Parse(node.ChildNodes[3].InnerText)) {
                         Title = node.ChildNodes[0].InnerText,
                         Price = node.ChildNodes[1].InnerText,
                         Rating = int.Parse(node.ChildNodes[2].InnerText)
@@ -52,11 +53,12 @@ namespace AwfulVideoStore {
                 list.Visible = false;
                 excelBtn.Visible = false;
                 excelExpPopular.Visible = false;
+                sellLnk.Visible = false;
             }
 
-            list.DataSource = films;
+            list.DataSource = movies;
             list.DataBind();
-            Session["Films"] = films;
+            Session["Films"] = movies;
         }
 
         private static XmlDocument LoadXml(string fileName) {

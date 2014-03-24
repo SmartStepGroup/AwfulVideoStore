@@ -1,6 +1,8 @@
 AwfulVideoStore
 ===============
 
+Refactoring workshop. Practice example on how to manage legacy code and start writing unit tests. Theory is here - http://www.slideshare.net/SmartStepGroup/ss-32654684
+
 ##### Task #1. Extract and Override Factory Method
  - Move everything related to Session and TextBoxes in Login Page to new method. Write tests on authorization
  - Do the same for SellingReport Page. Write tests that only admin can see report

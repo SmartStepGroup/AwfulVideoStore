@@ -94,7 +94,6 @@
     <Compile Include="SellingReport.aspx.designer.cs">
       <DependentUpon>SellingReport.aspx</DependentUpon>
     </Compile>
-    <Compile Include="SellingReportServce.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
